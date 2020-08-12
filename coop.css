@@ -1,44 +1,108 @@
-body{
-    background-color:black;
-    width:100%;
+/*
+    bold: font-weight: 500;
+    italic: font-style: italic;
+ */
+
+* {
+    box-sizing: border-box;
 }
 
-.title, h2, p{
-    color:white;
-}
-.container li{
-    left:1000px;
-    top:0px;
-    position:relative;
-    background-color:rgba(100,150,150,0.3);
-    display:inline-block;
-    border:1px solid black;
-    padding:5px;
-    margin:3px;
-}
-.container a {
-
-    color:white;
-
-    font-size:14px;
-    text-align:center;
-}
-.title{
-    float:left;
-    margin:5px;
-}
-.pocha{
-    width:100vw;
-    height:100vh;
-    position:sticky;
-    margin:0;
-    padding:0;
-}
-.sundae{
-    float:left;
-    padding:20px;
+html,
+body {
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-p{
-    width:90%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+article {
+    max-width: 800px;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-rows: auto 100% auto;
+    grid-template-columns: auto 100%;
+    grid-template-areas:
+    "logo nav"
+    "main main"
+    "footer footer";
+    justify-items: start;
+    align-items: start;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(100, 150, 150, 0.3);
+    display: inline-block;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    transition: 0.5s background-color;
+    font-size: 1.2rem;
+}
+
+.main-menu a:hover {
+    background-color: rgba(100, 150, 150, 0.6);
+}
+
+h1 {
+    grid-area: logo;
+    align-self: center;
+}
+
+nav {
+    grid-area: nav;
+    justify-self: end;
+    align-self: center;
+}
+
+section {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    align-self: end;
+}
+
+.sundae {
+    float: left;
+    padding: 1.5em;
+}
+
+p {
+    margin: 1em 0;
+    padding: 0;
 }
