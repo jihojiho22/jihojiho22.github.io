@@ -1,0 +1,44 @@
+body{
+    background-color:black;
+    width:100%;
+}
+
+.title, h2, p{
+    color:white;
+}
+.container li{
+    left:1000px;
+    top:0px;
+    position:relative;
+    background-color:rgba(100,150,150,0.3);
+    display:inline-block;
+    border:1px solid black;
+    padding:5px;
+    margin:3px;
+}
+.container a {
+
+    color:white;
+
+    font-size:14px;
+    text-align:center;
+}
+.title{
+    float:left;
+    margin:5px;
+}
+.pocha{
+    width:100vw;
+    height:100vh;
+    position:sticky;
+    margin:0;
+    padding:0;
+}
+.sundae{
+    float:left;
+    padding:20px;
+}
+
+p{
+    width:90%;
+}
